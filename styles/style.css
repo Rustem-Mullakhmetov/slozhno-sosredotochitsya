@@ -1,17 +1,19 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background: var(--accent-background-image) top center no-repeat;
+  /* сохраните в разметке и стилях класс pagecenter. На его основе работает скрипт. */
   background-color: var(--accent-background-color);
   background-size: auto 668px;
-  background-attachment: fixed;
   color: var(--accent-main-text-color);
 }
 
 .header {
   padding: 10px;
   position: relative;
+  background-image: var(--accent-background-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 @media (width > 767px) {
@@ -221,7 +223,6 @@
 @media (width > 767px) {
   .main {
     display: flex;
-    flex: 1 1 auto;
     flex-direction: column;
     gap: 10px;
     padding: 0 20px;
@@ -397,6 +398,12 @@
 @media (width > 767px) {
   .footer {
     padding: 434px 204px;
+  }
+}
+
+@media (width >= 1024px) {
+  .footer {
+    padding: 282px 200px;
   }
 }
 

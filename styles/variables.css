@@ -19,6 +19,8 @@
     --accent-background-image: url(../images/cover-image-dark.png);
     --accent-rec-color: var(--accent-header-nav-color);
     --accent-corner-color: #ff0070;
+    --accent-subtitle-background-color: #ff0070;
+    --accent-article-background-color: #ff0070;
     --accent-hover-color: rgba(255, 0, 112, 0.4);
     --accent-link-shadow: #ff0070;
   }
