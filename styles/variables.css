@@ -2,3 +2,44 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --accent-font-family: "IBM Plex Mono";
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-title-color: #db00ff;
+    --accent-header-color: #000028;
+    --accent-header-nav-color: #ff0070;
+    --accent-title-shadow: #ff0070;
+    --accent-main-text-color: #f1b2ce;
+    --accent-article-title-color: var(--accent-header-color);
+    --accent-section-title-color: #ff0070;
+    --accent-background-color: #000028;
+    --accent-background-image: url(../images/cover-image-dark.png);
+    --accent-rec-color: var(--accent-header-nav-color);
+    --accent-corner-color: #ff0070;
+    --accent-hover-color: rgba(255, 0, 112, 0.4);
+    --accent-link-shadow: #ff0070;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-title-color: #ffc2e6;
+    --accent-header-color: #353430;
+    --accent-header-nav-color: #353430;
+    --accent-title-shadow: #ff0070;
+    --accent-main-text-color: #353430;
+    --accent-article-title-color: var(--accent-header-color);
+    --accent-section-title-color: #353430;
+    --accent-background-color: #fff1f7;
+    --accent-background-image: url(../images/cover-image-light.png);
+    --accent-rec-color: var(--accent-background-color);
+    --accent-corner-color: #353430;
+    --accent-subtitle-background-color: #ff8dcb;
+    --accent-article-background-color: #ff8dcb;
+    --accent-hover-color: rgba(50, 49, 45, 0.4);
+    --accent-link-shadow: #ff8dcb;
+  }
+}
