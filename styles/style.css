@@ -4,6 +4,7 @@
   /* сохраните в разметке и стилях класс pagecenter. На его основе работает скрипт. */
   background-color: var(--accent-background-color);
   background-size: auto 668px;
+  background-attachment: fixed;
   color: var(--accent-main-text-color);
 }
 
