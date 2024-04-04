@@ -191,6 +191,7 @@
 
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--accent-corner-color);
+  outline: none;
 }
 
 .header__theme-menu-button_active {
