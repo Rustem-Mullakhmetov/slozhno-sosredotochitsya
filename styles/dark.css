@@ -9,6 +9,9 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+}
+
+:root .theme_dark {
   --accent-title-color: #db00ff;
   --accent-header-color: #000028;
   --accent-header-nav-color: #ff0070;
@@ -24,4 +27,24 @@
   --accent-article-background-color: #ff0070;
   --accent-hover-color: rgba(255, 0, 112, 0.4);
   --accent-link-shadow: #ff0070;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-title-color: #db00ff;
+    --accent-header-color: #000028;
+    --accent-header-nav-color: #ff0070;
+    --accent-title-shadow: #ff0070;
+    --accent-main-text-color: #f1b2ce;
+    --accent-article-title-color: var(--accent-header-color);
+    --accent-section-title-color: #ff0070;
+    --accent-background-color: #000028;
+    --accent-background-image: url(../images/cover-image-dark.png);
+    --accent-rec-color: var(--accent-header-nav-color);
+    --accent-corner-color: var(--accent-header-nav-color);
+    --accent-subtitle-background-color: #ff0070;
+    --accent-article-background-color: #ff0070;
+    --accent-hover-color: rgba(255, 0, 112, 0.4);
+    --accent-link-shadow: #ff0070;
+  }
 }
